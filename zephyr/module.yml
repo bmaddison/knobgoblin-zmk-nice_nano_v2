@@ -1,0 +1,4 @@
+name: zmk-keyboard-knobgoblin-nrf52840
+build:
+  settings:
+    board_root: .
