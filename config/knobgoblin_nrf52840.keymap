@@ -8,55 +8,51 @@
 #define kgreserved 3
 
 / {
-    keymap {
-        compatible = "zmk,keymap";
 
-        kgbase {
-            display-name = "Base";
-            bindings = <
-&none             &kp ESCAPE  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))
-&none             &kp LG(C)   &kp INSERT            &kp BACKSPACE         &kp DELETE
-&none             &kp LG(V)   &kp LA(LEFT)          &kp ENTER             &kp RA(RIGHT)
-&kp C_PLAY_PAUSE  &kp LG(Z)   &kp PAGE_DOWN         &kp UP                &kp PAGE_UP
-&kp C_MUTE        &to 1       &kp LEFT              &kp DOWN              &kp RIGHT
-            >;
+  keymap {
+    compatible = "zmk,keymap";
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp RIGHT LEFT_ARROW>;
-        };
+    kgbase {
+      display-name = "Base";
+      bindings = <
+&none             &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LG(N5))  &kp BACKSLASH
+&none             &kp LG(C)       &kp LG(V)       &kp BACKSPACE   &kp DELETE
+&none             &kp LG(Z)       &kp LA(LEFT)    &kp INSERT      &kp RA(RIGHT)
+&kp C_PLAY_PAUSE  &kp TILDE       &kp PAGE_DOWN   &kp UP          &kp PAGE_UP
+&kp C_MUTE        &to 1           &kp LEFT        &kp DOWN        &kp RIGHT
+      >;
 
-        kgnumpad {
-            display-name = "Numpad";
-            bindings = <
+      sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                        <&inc_dec_kp RIGHT LEFT_ARROW>;
+    };
+
+    kgnumpad {
+      display-name = "Numpad";
+      bindings = <
 &none   &kp LPAR   &kp RPAR   &kp CARET  &kp KP_SLASH
 &none   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY
 &none   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
 &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_PLUS
 &trans  &to 2      &kp KP_N0  &kp DOT    &kp KP_ENTER
-            >;
+      >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp RIGHT LEFT_ARROW>;
+      sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                        <&inc_dec_kp RIGHT LEFT_ARROW>;
+    };
 
-        };
+    kgsystem {
+      display-name = "System";
+      bindings = <
+&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+&none        &bt BT_CLR    &none         &none         &none
+&none        &none         &none         &none         &none
+&sys_reset   &none         &none         &none         &none
+&bootloader  &to 0         &none         &none         &none
+          >;
 
-        kgsystem {
-            display-name = "System";
-            bindings = <
-&none   &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2
-&none   &kp HOME        &trans          &kp PAGE_UP      &trans
-&none   &kp END         &kp UP_ARROW    &kp PAGE_DOWN    &trans
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SPACE
-&trans  &to 0           &kp BACKSPACE   &kp DELETE       &studio_unlock
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp RIGHT LEFT_ARROW>;
-
-        };
+      sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                        <&inc_dec_kp RIGHT LEFT_ARROW>;
+    };
 
         kgreserved { status = "reserved"; };
     };
