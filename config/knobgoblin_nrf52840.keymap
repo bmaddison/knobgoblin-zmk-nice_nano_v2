@@ -49,7 +49,7 @@
 &none   &kp HOME        &trans          &kp PAGE_UP      &trans
 &none   &kp END         &kp UP_ARROW    &kp PAGE_DOWN    &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SPACE
-&trans  &to 0           &kp BACKSPACE   &kp DELETE       &trans
+&trans  &to 0           &kp BACKSPACE   &kp DELETE       &studio_unlock
             >;
 
             sensor-bindings =
