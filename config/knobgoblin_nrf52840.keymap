@@ -13,7 +13,7 @@
     compatible = "zmk,keymap";
 
     kgbase {
-      display-name = "Base";
+      display-name = "Macropad";
       bindings = <
 &none             &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LG(N5))  &kp BACKSLASH
 &none             &kp LG(C)       &kp LG(V)       &kp BACKSPACE   &kp DELETE
@@ -56,5 +56,5 @@
 
   kgreserved { status = "reserved"; };
 
-  }
+  };
 };
