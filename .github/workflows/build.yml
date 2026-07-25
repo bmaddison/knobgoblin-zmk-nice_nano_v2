@@ -1,5 +1,12 @@
 name: Build ZMK firmware
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches-ignore:
+      - EnableBluetooth
+  pull_request:
+    branches-ignore:
+      - EnableBluetooth
+  workflow_dispatch:
 
 jobs:
   build:
