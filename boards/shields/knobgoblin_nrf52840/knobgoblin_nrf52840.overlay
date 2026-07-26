@@ -27,14 +27,13 @@
             ;
     };
 
-    // 2. Define the I2C bus and the display configuration
+    // Define the I2C bus and the display configuration
     &pro_micro_i2c {
         status = "okay";
 
         oled: ssd1306@3c {
             compatible = "solomon,ssd1306fb";
             reg = <0x3c>;
-            // Define native hardware dimensions BEFORE rotation
             width = <128>;
             height = <32>;
             segment-remap;
