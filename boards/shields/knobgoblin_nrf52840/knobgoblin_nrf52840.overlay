@@ -29,7 +29,7 @@
     };
 
     // Define the I2C bus and the display configuration
-    &pro_micro_i2c {
+    &i2c0 {
         status = "okay";
 
         oled: ssd1306@3c {
