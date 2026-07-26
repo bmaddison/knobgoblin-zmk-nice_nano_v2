@@ -14,35 +14,30 @@
             RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4)
         >;
     };
+
+    encoder0: encoder0 {
+      compatible = "alps,ec11";
+      a-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+      b-gpios = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+      steps = <96>;
+      status = "okay";
+  };
+
+  encoder1: encoder1 {
+      compatible = "alps,ec11";
+      a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+      b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+      steps = <96>;
+      status = "okay";
+  };
+
+  sensors: sensors {
+      compatible = "zmk,keymap-sensors";
+      sensors = <&encoder0 &encoder1>;
+      triggers-per-rotation = <24>;
+  };
 };
 
 &physical_layout_knobgoblin_nrf52840 {
     transform = <&matrix_transform0>;
 };
-
-// Encoders for all parts of the keyboard.
-// If the encoder(s) are not behaving as expected,
-// update steps and triggers-per-rotation to match your hardware.
-// All pin assignments are done in the part overlays.
-
-/ {
-    encoder0: encoder0 {
-        compatible = "alps,ec11";
-        a-gpios = <&pro_micro 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        steps = <96>;
-        status = "disabled";
-    };
-    encoder1: encoder1 {
-        compatible = "alps,ec11";
-        steps = <96>;
-        status = "disabled";
-    };
-
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&encoder0 &encoder1>;
-        triggers-per-rotation = <24>;
-    };
-};
-
