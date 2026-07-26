@@ -32,25 +32,3 @@
     pinctrl-names = "default", "sleep";
     clock-frequency = <I2C_BITRATE_FAST>;
 };
-
-// devices on i2c0
-
-&i2c0 {
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;
-        width = <128>;
-        height = <32>;
-
-        segment-remap;
-        com-invdir;
-        com-sequential;
-        prechargep = <0x22>;
-    };
-};
-
-/ {
-    chosen {
-        zephyr,display = &oled;
-    };
-};
