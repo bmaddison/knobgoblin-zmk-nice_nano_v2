@@ -32,5 +32,5 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: knobgoblin_nrf52840_with_studio
 
-  - board: nice_nano_v2
-    shield: settings_reset
+ # - board: nice_nano_v2
+ #   shield: settings_reset
