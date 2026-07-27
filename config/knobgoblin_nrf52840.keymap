@@ -47,7 +47,7 @@
              &bt BT_CLR     &none          &none          &none
              &studio_unlock &studio_unlock &studio_unlock &studio_unlock
 &sys_reset   &none          &none          &none          &none
-&bootloader  &to 0          &none          &none          &none
+&bootloader  &to 0          &to 1          &none          &none
       >;
 
       sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
