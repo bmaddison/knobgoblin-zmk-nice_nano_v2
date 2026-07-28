@@ -5,38 +5,23 @@
 
 / {
     behaviors {
-        // Activates Layer 1 on tap, Layer 2 when Shifted
-        kg_m_1_2: kg_morph_1_2 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&to 1>, <&to 2>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-                
-        // Activates Layer 0 on tap, Layer 2 when Shifted
-        kg_m_0_2: kg_morph_0_2 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&to 0>, <&to 2>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        // Activates Layer 0 on tap, Layer 1 when Shifted
-        kg_m_0_1: kg_morph_0_1 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&to 0>, <&to 1>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-                
-        // Reusable parameter-based hold-tap
-        kg_hk: kg_hold_key {
+                        
+        kg_ht: kg_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+        
+        to_ht: to_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&to>, <&to>;
         };
     };
     
@@ -46,11 +31,11 @@
         layer_macropad {
             display-name = "Macropad";
             bindings = <
-                                    &kg_hk LS(LC(LG(N3))) LS(LG(N3))    &kg_hk LS(LC(LG(N4))) LS(LG(N4))    &kp LS(LG(N5))    &kp BACKSLASH
+                                    &kg_ht LS(LG(N3)) LS(LC(LG(N3)))    &kg_ht LS(LG(N4)) LS(LC(LG(N4)))    &kp LS(LG(N5))    &kp BACKSLASH
                                     &kp LG(C)                           &kp LG(V)                           &kp BACKSPACE     &kp DELETE
                                     &kp LG(Z)                           &kp LA(LEFT)                        &kp INSERT        &kp RA(RIGHT)
                 &kp C_PLAY_PAUSE    &kp TILDE                           &kp PAGE_DOWN                       &kp UP            &kp PAGE_UP
-                &kp C_MUTE          &kg_m_1_2                           &kp LEFT                            &kp DOWN          &kp RIGHT
+                &kp C_MUTE          &to_ht 2 1                          &kp LEFT                            &kp DOWN          &kp RIGHT
             >;
 
             sensor-bindings =
@@ -65,7 +50,7 @@
                           &kp N7       &kp N8      &kp N9       &kp STAR
                           &kp N4       &kp N5      &kp N6       &kp MINUS
                 &trans    &kp N1       &kp N2      &kp N3       &kp PLUS
-                &trans    &kg_m_0_2    &kp N0      &kp DOT      &kp ENTER
+                &trans    &to_ht 2 0   &kp N0      &kp DOT      &kp ENTER
             >;
 
             sensor-bindings =
@@ -80,7 +65,7 @@
                                &out OUT_TOG      &none           &none           &none
                                &studio_unlock    &none           &none           &none
                 &sys_reset     &studio_unlock    &none           &none           &none
-                &bootloader    &kg_m_0_1         &none           &none           &bt BT_CLR
+                &bootloader    &to_ht 1 0        &none           &none           &bt BT_CLR
             >;
 
             sensor-bindings =
