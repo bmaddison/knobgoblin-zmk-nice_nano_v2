@@ -33,7 +33,7 @@
             bindings = <
                                     &kg_ht LS(LG(N3)) LS(LC(LG(N3)))    &kg_ht LS(LG(N4)) LS(LC(LG(N4)))    &kp LS(LG(N5))    &kp BACKSLASH
                                     &kp LG(C)                           &kp LG(V)                           &kp BACKSPACE     &kp DELETE
-                                    &kp LG(Z)                           &kp LA(LEFT)                        &kp INSERT        &kp RA(RIGHT)
+                                    &kp LG(Z)                           &kp LA(LEFT)                        &kp INSERT        &kp LA(RIGHT)
                 &kp C_PLAY_PAUSE    &kp TILDE                           &kp PAGE_DOWN                       &kp UP            &kp PAGE_UP
                 &kp C_MUTE          &to_ht 2 1                          &kp LEFT                            &kp DOWN          &kp RIGHT
             >;
