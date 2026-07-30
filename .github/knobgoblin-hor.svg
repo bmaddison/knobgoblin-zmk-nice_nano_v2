@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2110 690">
+  <defs>
+    <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg_4" class="keymap" viewBox="0 0 2110 690">
+      <style>
+        /* inherit to force styles through use tags */
+        svg path {
+          fill: inherit;
+        }
+
+        /* font and background color specifications */
+        svg.keymap {
+          font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+          font-size: 14px;
+          font-kerning: normal;
+          text-rendering: optimizeLegibility;
+          fill: #24292e;
+        }
+
+        /* default key styling */
+        rect.key {
+          fill: #f6f8fa;
+        }
+
+        rect.key,
+        rect.combo {
+          stroke: #c9cccf;
+          stroke-width: 1;
+        }
+
+        /* default key side styling, only used is draw_key_sides is set */
+        rect.side {
+          filter: brightness(90%);
+        }
+
+        /* color accent for combo boxes */
+        rect.combo,
+        rect.combo-separate {
+          fill: #cdf;
+        }
+
+        /* color accent for held keys */
+        rect.held,
+        rect.combo.held {
+          fill: #fdd;
+        }
+
+        /* color accent for ghost (optional) keys */
+        rect.ghost,
+        rect.combo.ghost {
+          stroke-dasharray: 4, 4;
+          stroke-width: 2;
+        }
+
+        text {
+          text-anchor: middle;
+          dominant-baseline: middle;
+        }
+
+        /* styling for layer labels */
+        text.label {
+          font-weight: bold;
+          text-anchor: start;
+          stroke: white;
+          stroke-width: 4;
+          paint-order: stroke;
+          font-size: 24px;
+        }
+
+        /* styling for optional footer */
+        text.footer {
+          text-anchor: end;
+          dominant-baseline: auto;
+          stroke: white;
+          stroke-width: 4;
+          paint-order: stroke;
+        }
+
+        /* styling for combo tap, and key non-tap label text */
+        text.combo,
+        text.hold,
+        text.shifted,
+        text.left,
+        text.right,
+        text.tl,
+        text.tr,
+        text.bl,
+        text.br {
+          font-size: 11px;
+          font-style: italic;
+        }
+
+        text.hold,
+        text.bl,
+        text.br {
+          text-anchor: middle;
+          dominant-baseline: auto;
+        }
+
+        text.shifted,
+        text.tl,
+        text.tr {
+          text-anchor: middle;
+          dominant-baseline: hanging;
+        }
+
+        text.left,
+        text.tl,
+        text.bl {
+          text-anchor: start;
+        }
+
+        text.right,
+        text.tr,
+        text.br {
+          text-anchor: end;
+        }
+
+        text.layer-activator {
+          text-decoration: underline;
+        }
+
+        /* styling for hold/shifted label text in combo box */
+        text.combo.hold,
+        text.combo.shifted,
+        text.combo.left,
+        text.combo.right {
+          font-size: 8px;
+        }
+
+        /* lighter symbol for transparent keys */
+        text.trans {
+          fill: #7b7e81;
+        }
+
+        /* styling for combo dendrons */
+        path.combo {
+          stroke-width: 1;
+          stroke: gray;
+          fill: none;
+        }
+
+        .separator-line {
+          stroke: #cccccc;
+          stroke-width: 2;
+          stroke-dasharray: 4 4;
+        }
+
+        svg.keymap {
+          background-color: #FFF;
+        }
+      </style>
+      <text y="28" class="label" transform="translate(30)">Macropad:</text>
+      <g class="key" transform="translate(240 116)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-26" class="key">
+          <tspan x="0">Clip Screen</tspan>
+        </text>
+        <text class="key hold">tap/hold</text>
+        <text y="17" class="key">
+          <tspan x="0">Clip Screen</tspan>
+          <tspan x="0" dy="1.3em">to File</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(360 116)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-26" class="key">
+          <tspan x="0">Clip Selection</tspan>
+        </text>
+        <text class="key hold">tap/hold</text>
+        <text y="17" class="key">
+          <tspan x="0">Clip Selection</tspan>
+          <tspan x="0" dy="1.3em">to File</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(480 116)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0" dy="-.6em">Open Clip</tspan>
+          <tspan x="0" dy="1.3em">Dialog</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(600 116)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">\</text>
+      </g>
+      <g class="key" transform="translate(240 236)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">Copy</text>
+      </g>
+      <g class="key" transform="translate(360 236)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">Paste</text>
+      </g>
+      <g class="key" transform="translate(480 236)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan>Backspace</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(600 236)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">Delete</text>
+      </g>
+      <g class="key" transform="translate(240 356)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">Undo</text>
+      </g>
+      <g class="key" transform="translate(360 356)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0">Alt+Left</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(480 356)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">Insert</text>
+      </g>
+      <g class="key" transform="translate(600 356)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0">Alt+Right</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(90 386)">
+        <circle r="70" fill="#a9a9a9" />
+        <circle r="65" fill="#f5f5f5" />
+        <text y="-4" class="key">
+          <tspan x="0">Play/Pause</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(240 476)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">~</text>
+      </g>
+      <g class="key" transform="translate(360 476)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0">Page Down</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(480 476)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">Up</text>
+      </g>
+      <g class="key" transform="translate(600 476)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0">Page Up</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(90 566)">
+        <circle r="70" fill="#a9a9a9" />
+        <circle r="65" fill="#f5f5f5" />
+        <text y="-4" class="key">Mute</text>
+      </g>
+      <g class="key" transform="translate(240 596)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-26" class="key">
+          <tspan x="0">Numpad</tspan>
+        </text>
+        <text class="key hold">tap/hold</text>
+        <text y="22" class="key">
+          <tspan x="0">System</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(360 596)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">Left</text>
+      </g>
+      <g class="key" transform="translate(480 596)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">Down</text>
+      </g>
+      <g class="key" transform="translate(600 596)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">Right</text>
+      </g>
+      <path d="M700 20v650" class="separator-line" />
+      <text y="28" class="label" transform="translate(740)">Numpad:</text>
+      <g class="key" transform="translate(950 116)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">(</text>
+      </g>
+      <g class="key" transform="translate(1070 116)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">)</text>
+      </g>
+      <g class="key" transform="translate(1190 116)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">^</text>
+      </g>
+      <g class="key" transform="translate(1310 116)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">/</text>
+      </g>
+      <g class="key" transform="translate(950 236)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">7</text>
+      </g>
+      <g class="key" transform="translate(1070 236)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">8</text>
+      </g>
+      <g class="key" transform="translate(1190 236)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">9</text>
+      </g>
+      <g class="key" transform="translate(1310 236)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">*</text>
+      </g>
+      <g class="key" transform="translate(950 356)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">4</text>
+      </g>
+      <g class="key" transform="translate(1070 356)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">5</text>
+      </g>
+      <g class="key" transform="translate(1190 356)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">6</text>
+      </g>
+      <g class="key" transform="translate(1310 356)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">-</text>
+      </g>
+      <g class="key trans" transform="translate(800 386)">
+        <circle r="70" fill="#a9a9a9" />
+        <circle r="65" fill="#f5f5f5" />
+        <text y="-4" class="key">
+          <tspan x="0">Play/Pause</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(950 476)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">1</text>
+      </g>
+      <g class="key" transform="translate(1070 476)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">2</text>
+      </g>
+      <g class="key" transform="translate(1190 476)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">3</text>
+      </g>
+      <g class="key" transform="translate(1310 476)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">+</text>
+      </g>
+      <g class="key trans" transform="translate(800 566)">
+        <circle r="70" fill="#a9a9a9" />
+        <circle r="65" fill="#f5f5f5" />
+        <text y="-4" class="key">
+          <tspan x="0">Mute</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(950 596)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-26" class="key">
+          <tspan x="0">Macropad</tspan>
+        </text>
+        <text class="key hold">tap/hold</text>
+        <text y="22" class="key">
+          <tspan x="0">System</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(1070 596)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">0</text>
+      </g>
+      <g class="key" transform="translate(1190 596)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">.</text>
+      </g>
+      <g class="key" transform="translate(1310 596)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">Enter</text>
+      </g>
+      <path d="M1410 20v650" class="separator-line" />
+      <text y="28" class="label" transform="translate(1450)">System:</text>
+      <g class="key" transform="translate(1660 116)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0" dy="-.6em">Bluetooth</tspan>
+          <tspan x="0" dy="1.3em">Profile 0</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(1780 116)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0" dy="-.6em">Bluetooth</tspan>
+          <tspan x="0" dy="1.3em">Profile 1</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(1900 116)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0" dy="-.6em">Bluetooth</tspan>
+          <tspan x="0" dy="1.3em">Profile 2</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(2020 116)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0" dy="-.6em">Bluetooth</tspan>
+          <tspan x="0" dy="1.3em">Profile 3</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(1660 236)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0" dy="-.6em">Toggle USB</tspan>
+          <tspan x="0" dy="1.3em">or Bluetooth</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(1780 236)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+      </g>
+      <g class="key" transform="translate(1900 236)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+      </g>
+      <g class="key" transform="translate(2020 236)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+      </g>
+      <g class="key" transform="translate(1660 356)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0" dy="-.6em">ZMK Studio</tspan>
+          <tspan x="0" dy="1.3em">Unlock</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(1780 356)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+      </g>
+      <g class="key" transform="translate(1900 356)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+      </g>
+      <g class="key" transform="translate(2020 356)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+      </g>
+      <g class="key" transform="translate(1510 386)">
+        <circle r="70" fill="#a9a9a9" />
+        <circle r="65" fill="#f5f5f5" />
+        <text y="-4" class="key">
+          <tspan x="0">System</tspan>
+          <tspan x="0" dy="1.3em">Reset</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(1660 476)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0" dy="-.6em">ZMK Studio</tspan>
+          <tspan x="0" dy="1.3em">Unlock</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(1780 476)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+      </g>
+      <g class="key" transform="translate(1900 476)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+      </g>
+      <g class="key" transform="translate(2020 476)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+      </g>
+      <g class="key" transform="translate(1510 566)">
+        <circle r="70" fill="#a9a9a9" />
+        <circle r="65" fill="#f5f5f5" />
+        <text y="-4" class="key">
+          <tspan>Bootloader</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(1660 596)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-26" class="key">
+          <tspan x="0">Macropad</tspan>
+        </text>
+        <text class="key hold">tap/hold</text>
+        <text y="22" class="key">
+          <tspan x="0">Numpad</tspan>
+        </text>
+      </g>
+      <g class="key" transform="translate(1780 596)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+      </g>
+      <g class="key" transform="translate(1900 596)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+      </g>
+      <g class="key" transform="translate(2020 596)">
+        <rect width="116" height="116" x="-58" y="-58" class="key side" rx="6" ry="6" />
+        <rect width="104" height="104" x="-52" y="-56" class="key" rx="4" ry="4" />
+        <text y="-4" class="key">
+          <tspan x="0" dy="-1em">Clear Current</tspan>
+          <tspan x="0" dy="1.3em">Bluetooth</tspan>
+          <tspan x="0" dy="1.3em">Profile</tspan>
+        </text>
+      </g>
+    </symbol>
+  </defs>
+  <use href="#svg_4" />
+</svg>
